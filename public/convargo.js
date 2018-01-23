@@ -47,7 +47,7 @@ let CONVARGO = (() => {
    * @return {Object}
    */
   const shippingCommission = (price, distance) => {
-    const value = parseFloat((price * 0.3).toFixed(2));
+    const value = parseFloat((price * 0.3).toFixed(2)); // 2 decimals
     const insurance = parseFloat((value * 0.5).toFixed(2));
     const treasury = Math.ceil(distance / TREASURY_TAX_KM);
 
@@ -86,6 +86,8 @@ let CONVARGO = (() => {
   const payActors = (trucker, distance, volume, option) => {
     const price = shippingPrice(trucker, distance, volume);
     const commission = shippingCommission(price, distance);
+    // Conditional operator
+    // It has the form of: condition ? value-if-true : value-if-false
     const deductibleOption = option ? 1 * volume : 0;
 
     var actors = [{
