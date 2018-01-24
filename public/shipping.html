@@ -11,38 +11,77 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body id="shippping-page">
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container">
-    <a class="navbar-brand" href="home.html">Convargo</a>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="home.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="about.html">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="shipping.html">Shipping</a>
-    </li>
-  </ul>
-</div>
+      <a class="navbar-brand" href="home.html">Convargo</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="shipping.html">Shipping</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
-  <div id="trucker">
-    <input class="name" type="text" placeholder="Trucker name"/>
-    <input class="price-by-km" type="number" placeholder="Price by km"/>
-    <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+  <div class="info">
+    <h2>You are one step away from shipping your delivery</h2>
+    <h4>We juste need some informations:</h4>
   </div>
-  <div id="shipper">
-    <input class="name" type="text" placeholder="Shipper name"/>
-    <input class="distance" type="number" placeholder="Distance in km"/>
-    <input class="volume" type="number" placeholder="Volume in m3"/>
-    <input class="option" type="checkbox" placeholder="Deductible option"/>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="trucker">
+          <h3>Trucker</h3>
+          <div>
+            <p>Name:</p>
+            <input class="name" type="text" placeholder="ex: Dupont" />
+          </div>
+          <div>
+            <p>Price per kilometer:</p>
+            <input class="price-by-km" type="number" placeholder="Price by km" />
+          </div>
+          <div>
+            <p>Price per cubic:</p>
+            <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+          </div>
+          <p>
+            Deductible option:
+          </p>
+          <input class="option" type="checkbox" placeholder="Deductible option" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div id="shipper">
+          <h3>Shipper</h3>
+          <div>
+            <p>Name:</p>
+            <input class="name" type="text" placeholder="ex: Martin" />
+          </div>
+          <div>
+            <p>Distance:</p>
+            <input class="distance" type="number" placeholder="Distance in km" />
+          </div>
+          <div>
+            <p>Volume:</p>
+            <input class="volume" type="number" placeholder="Volume in m3" />
+          </div>
+        </div>
+        <button id="compute">Compute</button>
+      </div>
+      <div class=col-sm-4>
+        <h3>Prices</h3>
+        <div id="actors"></div>
+      </div>
+    </div>
   </div>
-  <button id="compute">Compute</button>
-  <div id="actors"></div>
 
   <script src="convargo.js"></script>
   <script src="index.js"></script>

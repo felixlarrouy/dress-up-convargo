@@ -1,100 +1,116 @@
 .navbar {
-	min-height: 5em;
+  min-height: 5em;
 }
 
 .navbar-nav {
-	float: right;
+  float: right;
 }
 
 .navbar-brand {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .nav-link {
-	color: white !important;
-	margin: 0em 0.8em;
-	font-size: 1.4em;
+  color: white !important;
+  margin: 0em 0.8em;
+  font-size: 1.4em;
 }
 
 .active {
-	color: #608bd2 !important;
-	pointer-events: none;
-	opacity: 1;
+  color: #608bd2 !important;
+  pointer-events: none;
+  opacity: 1;
 }
 
 .home-content {
-	text-align: center;
-	margin-top: 10em;
+  text-align: center;
+  margin-top: 10em;
 }
 
 .slogan {
-	text-decoration: none;
-	font: normal 3em, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font: normal 3em, Arial, Helvetica, sans-serif;
 }
 
-span {
-	color: #a80f0f
+.home-content span {
+  color: #a80f0f
 }
 
 .description {
-	text-decoration: none;
-	font: normal 24px Cookie, Arial, Helvetica, sans-serif;
-	margin-top: 50px;
+  text-decoration: none;
+  font: normal 2em, Arial, Helvetica, sans-serif;
+  margin-top: 2em;
 }
 
 .buttons button {
-	border-radius: 35px;
-	color: white;
-	padding: 18px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 18px;
-	margin: 60px 20px;
-	cursor: pointer;
+  border-radius: 3em;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 3em 1em;
+  cursor: pointer;
 }
 
 .buttons .button-about {
-	background-color: Transparent;
-	border-width: medium;
-	border-color: white;
+  background-color: Transparent;
+  border-width: medium;
+  border-color: white;
 }
 
 .buttons .button-shipping {
-	background-color: #608bd2;
-	border: none;
+  background-color: #608bd2;
+  border: none;
 }
 
 /* For the headers to look good, be sure to reset the margin and padding of the body */
 
 #home-page {
-	margin:0;
-	padding:0;
-	background: url("img/home-background.jpg");
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-attachment: fixed;
-	background-size: cover;
+  margin: 0;
+  padding: 0;
+  background: url("img/home-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #about-page {
-	margin:0;
-	padding:0;
-	background: url("img/about-background.png");
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-attachment: fixed;
-	background-size: cover;
+  margin: 0;
+  padding: 0;
+  background: url("img/about-background.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#shippping-page {
+  margin: 0;
+  padding: 0;
+  background-color: #bbffba
 }
 
 /* Page about */
 
 .about {
-	font-size: 18px;
-	font-weight: bold;
-	margin: 7em 5em 0em 40em;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10em 10em 0em 40em;
+  max-width: 40em;
 }
 
-#trucker {
-	margin-top: 100px;
+.info {
+  margin: 7em 0em 2em 3em;
+}
+
+input {
+	border-radius: 0.5em;
+	height: 3em;
+	border: none;
+	padding: 1em;
+	max-width: 11em;
+	margin-bottom: 1em;
 }
