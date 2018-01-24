@@ -29,7 +29,7 @@
 
 .slogan {
 	text-decoration: none;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	font: normal 3em, Arial, Helvetica, sans-serif;
 }
 
 span {
@@ -92,7 +92,7 @@ span {
 .about {
 	font-size: 18px;
 	font-weight: bold;
-	margin: 30px;
+	margin: 7em 5em 0em 40em;
 }
 
 #trucker {
