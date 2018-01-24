@@ -3,22 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Workshop with Convargo.com</title>
+  <title>CSS/HTML Workshop with Convargo.com</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <header class="header-basic">
-    <div class="header-limiter">
-      <h1><a href="home.html">Convargo</a></h1>
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="#" class="selected">Shipping</a>
-      </nav>
-    </div>
-  </header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="home.html">Convargo</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="shipping.html">Shipping</a>
+    </li>
+  </ul>
+</div>
+  </nav>
 
   <div id="trucker">
     <input class="name" type="text" placeholder="Trucker name"/>

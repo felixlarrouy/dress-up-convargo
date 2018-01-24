@@ -1,58 +1,35 @@
-.header-basic {
-	background-color: #292c2f;
-	padding: 20px 40px;
-	height: 80px;
-	box-sizing: border-box;
+.navbar {
+	min-height: 5em;
 }
 
-.header-basic .header-limiter {
-	max-width: 1200px;
-	text-align: center;
-	margin: 0 auto;
-}
-
-/* Convargo logo */
-
-.header-basic .header-limiter h1 {
-	float: left;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-	line-height: 40px;
-	margin: 0;
-}
-
-/* The header links */
-
-.header-basic .header-limiter a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.header-basic .header-limiter nav{
-	font:16px Arial, Helvetica, sans-serif;
-	line-height: 40px;
+.navbar-nav {
 	float: right;
 }
 
-.header-basic .header-limiter nav a{
-	display: inline-block;
-	padding: 0 30px;
-	text-decoration:none;
-	color: #ffffff;
-	font-size: 16px;
-	opacity: 0.9;
+.navbar-brand {
+	font-size: 2em;
 }
 
-.header-basic .header-limiter nav a.selected {
-	color: #608bd2;
+.nav-link {
+	color: white !important;
+	margin: 0em 0.8em;
+	font-size: 1.4em;
+}
+
+.active {
+	color: #608bd2 !important;
 	pointer-events: none;
 	opacity: 1;
+}
+
+.home-content {
+	text-align: center;
+	margin-top: 10em;
 }
 
 .slogan {
 	text-decoration: none;
 	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
-	text-align: center;
-	margin-top: 80px;
 }
 
 span {
@@ -62,33 +39,11 @@ span {
 .description {
 	text-decoration: none;
 	font: normal 24px Cookie, Arial, Helvetica, sans-serif;
-	text-align: center;
 	margin-top: 50px;
 }
 
-.buttons {
-	text-align: center;
-}
-
-.buttons .button-about {
-	background-color: Transparent;
-	border-width: medium;
-	border-color: white;
-  border-radius: 35px;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 18px;
-	margin: 60px 20px;
-	cursor: pointer;
-}
-
-.buttons .button-shipping {
-	background-color: #608bd2;
-	border: none;
-  border-radius: 35px;
+.buttons button {
+	border-radius: 35px;
 	color: white;
 	padding: 18px 32px;
 	text-align: center;
@@ -99,9 +54,20 @@ span {
 	cursor: pointer;
 }
 
+.buttons .button-about {
+	background-color: Transparent;
+	border-width: medium;
+	border-color: white;
+}
+
+.buttons .button-shipping {
+	background-color: #608bd2;
+	border: none;
+}
+
 /* For the headers to look good, be sure to reset the margin and padding of the body */
 
-body {
+#home-page {
 	margin:0;
 	padding:0;
 	background: url("img/home-background.jpg");
@@ -109,4 +75,26 @@ body {
 	background-position: center bottom;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+#about-page {
+	margin:0;
+	padding:0;
+	background: url("img/about-background.png");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Page about */
+
+.about {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 30px;
+}
+
+#trucker {
+	margin-top: 100px;
 }
